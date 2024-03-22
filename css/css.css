@@ -8,6 +8,7 @@ body{
 .wrapper{
     display: grid;
     grid-template-rows: 100px 1fr 50px;
+    gap:10px;
     grid-template-areas: 
         "header"
         "main"
@@ -16,10 +17,15 @@ body{
 
 header {
     grid-area: header;
+    display: grid;
+    grid-template-rows: 50px 50px;
 }
 
 main {
     grid-area: main;
+    display: grid;
+    grid-template-rows:50px auto 50px 50px auto ;
+    gap:5px;
 }
 
 
@@ -27,22 +33,16 @@ h1{
     background-color: #333;
     margin: 0;
 }
-h2{
-    display: block;
+h2, h3{
     background-color: #333;
     color: white;
-    padding: 14px 100px;
+    padding-top: 5px;
     text-align: center;
+    margin: 0;
 }
-h3{
-    display: block;
-    background-color: #333;
-    color: white;
-    padding: 14px 100px;
-    text-align: center;
-}
+
 h1 a{
-    display: block;
+    display: grid;
     height: 40px;
     text-decoration: none;
     color: white;
@@ -56,22 +56,28 @@ h1 a{
 }
 
 section{
-    
+    color: white;
+    background-color: #333;
 }
 
 ul{
     padding: 0;
     background-color: #333;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
     
 }
 
 ul li{
-    display: inline-block;
+    
+    list-style-type: none;
+    display: grid;
 }
 
 ul li a {
-    display: block;
     color: white;
     padding: 14px 100px;
     text-decoration: none;
@@ -84,16 +90,15 @@ ul li a {
     
 }
 p{
-    display: block;
-    color: white;
-    background-color: #333;
-    padding: 17px 100px;
+    margin:0;
+    padding: 10px;
     font-size: 17px;
 }
 
 .trespaltlayout{
  display: grid;
  grid-template-columns: 1fr 1fr 1fr;
+ gap:10px;
 }
 
 a:hover{
@@ -105,7 +110,7 @@ a:hover{
 }
 
 footer{
-    grid-area: footer;
+   
     display: block;
     background-color: #333;
     padding: 14px 100px;
