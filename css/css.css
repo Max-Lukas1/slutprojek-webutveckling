@@ -135,3 +135,8 @@ img{
     }
 }
 
+form{
+    background-color: #333;
+    margin: 0;
+    display: grid;
+}
