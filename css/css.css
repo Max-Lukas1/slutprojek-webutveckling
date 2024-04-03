@@ -21,11 +21,17 @@ header {
     grid-template-rows: 50px 50px;
 }
 
-main {
+#mainlegs {
     grid-area: main;
     display: grid;
     grid-template-rows:45px auto 70px 45px auto ;
     gap:5px;
+}
+
+#mainkontakt{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: auto;
 }
 
 h1{
@@ -127,6 +133,12 @@ img{
     display: block;
 }
 
+form{
+    background-color: #333;
+    margin: 0;
+    display: grid;
+}
+
 @media screen and (max-width: 1150px){
     img{
         width: 225px;
@@ -135,8 +147,3 @@ img{
     }
 }
 
-form{
-    background-color: #333;
-    margin: 0;
-    display: grid;
-}
