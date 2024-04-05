@@ -1,70 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
-    <link rel="stylesheet" href="../css/css.css">
-    <script src="../scripts/script.js"></script>
-</head>
-<body>
-    <div class="wrapper">
-        <header>
-        <h1>
-            <a href="Startsida.html">&#8962 Kontakt</a>
-        </h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="Push.html">Push</a>
-
-                </li>
-                <li>
-                    <a href="Pull.html">Pull</a>
-                </li>
-                <li>
-                    <a href="Legs.html">Legs</a>
-                </li>
-                <li>
-                    <a href="Kontakt.html">Kontakt</a>
-                </li>
-            </ul>
-        </nav>
-        </header>
-        <main id="mainkontakt">
-            <div class="tvåspaltlayout">
-            <section>
-            <form id="healthForm" method="post" action="wallapåwalla">
-                <label for="age">Age:</label>
-                <input type="number" id="age" name="age" min="1" required>
-                <label for="pulse">Pulse (bpm):</label>
-                <input type="number" id="pulse" name="pulse" min="1" required>
-                <label for="intensity">Tränings Intensitet</label>
-                <select id="intensity" name="intensity" required>
-                    <option value="">Välj intensitet</option>
-                    <option value="low">Låg</option>
-                    <option value="moderate">Medel</option>
-                    <option value="high">Hög</option>
-                </select>
-                <input type="submit" value="Submit">
-            </form>
-            </section>
-            <section>
-                <form id="radioknappar" method="post" action="walla">
-                    <p>Hur var sidan?</p>
-                    <label for="Dåligt">Dålig</label>
-                    <input type="radio" id="Dålig" name="radioknappar" value="Dålig"><br>
-                    
-                    <label for="Okej">Okej</label>
-                    <input type="radio" id="Okej" name="radioknappar" value="Okej">
-
-                    <label for="Bra">Bra</label>
-                    <input type="radio" id="Bra" name="radioknappar" value="Bra">
-                </form>
-            </section>
-            </div>
-        </main>
-    </div>
-
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Index</title>
+        <link rel="stylesheet" href="../css/css.css">
+        <script src="../scripts/script.js"></script>
+    </head>
+    <body id="kontakt">
+        <div class="wrapper">
+            <header>
+            <h1>
+                <a href="../html/index.html">&#8962 Kontakt</a>
+            </h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="Push.html">Push</a>
+                    </li>
+                    <li>
+                        <a href="Pull.html">Pull</a>
+                    </li>
+                    <li>
+                        <a href="Legs.html">Legs</a>
+                    </li>
+                    <li>
+                        <a href="Kontakt.html">Kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+            </header>
+            <main>
+                    <form id="healthForm" method="post" action="wallapåwalla" class="tvåspaltlayout">
+                        <section>
+                            <label for="age">Age:</label>
+                            <input type="number" id="age" name="age" min="1" required>
+                            <label for="pulse">Pulse (bpm):</label>
+                            <input type="number" id="pulse" name="pulse" min="1" required>
+                            <label for="intensity">Tränings Intensitet</label>
+                            <select id="intensity" name="intensity" required>
+                                <option value="">Välj intensitet</option>
+                                <option value="low">Låg</option>
+                                <option value="moderate">Medel</option>
+                                <option value="high">Hög</option>
+                            </select>
+                            <input type="submit" value="Submit">
+                        </section>
+                        <section>
+                            <p>Hur var sidan?</p>
+                            <label for="Dåligt">Dålig</label>
+                            <input type="radio" id="Dålig" name="radioknappar" value="Dålig"><br>
+                            <label for="Okej">Okej</label>
+                            <input type="radio" id="Okej" name="radioknappar" value="Okej"> <br>
+                            <label for="Bra">Bra</label>
+                            <input type="radio" id="Bra" name="radioknappar" value="Bra"> <br>
+                            <Label for="Textruta">Har du några förbättrings områden skriv gärna</Label><br>
+                            <input type="text" id="text" name="förbättrings_områden"> <br><br>
+                            <input type="submit" value="Submit">
+                        </section>
+                    </form>
+                </div>
+            </main>
+        </div>
+    </body>
 </html>
