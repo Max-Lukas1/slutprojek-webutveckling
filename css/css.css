@@ -145,12 +145,9 @@ form{
     background-color: #333;
     margin: 0;
     gap: 5px;
-    padding-top: 10px
+    padding-top: 10px;
+    height: 200px;
 }
-form section{
-    display: grid;
-}
-
 
 
 
@@ -163,6 +160,11 @@ input[type="radio"] {
 }
 label{
     
+}
+
+input[type="text"]{
+    height: 60px;
+    width: 700px;
 }
 
 
