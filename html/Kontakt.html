@@ -31,18 +31,20 @@
             </nav>
             </header>
             <main>
-                    <form id="healthForm" method="post" class="tvåspaltlayout">
+                    <form id="healthForm" method="post" class="tvåspaltlayout" action="javascript:void(0)">
                         <section>
+                            <h3>Mål Puls</h3>
                             <label for="age">Ålder:</label><br>
-                            <input type="number" id="age" name="age" min="1" required><br><br>
+                            <input type="number" id="age" name="age" min="1" max="100" required><br><br>
                             <label for="intensity">Tränings Intensitet</label><br>
                             <select id="intensity" name="intensity" required><br>
-                                <option value="">Välj intensitet</option>
+                                <option>Välj intensitet</option>
                                 <option value="low">Låg</option>
                                 <option value="moderate">Medel</option>
                                 <option value="high">Hög</option>
                             </select><br><br>
-                            <input type="submit" value="Submit">
+                            <input type="submit" value="Submit" onclick="calculateHeartRate();"> <br><br>
+                            <input type="text" id="result">
                         </section>
                         <section>
                             <p>Hur var sidan?</p>
@@ -51,9 +53,9 @@
                             <label for="Okej">Okej</label>
                             <input type="radio" id="Okej" name="radioknappar" value="Okej"> <br>
                             <label for="Bra">Bra</label>
-                            <input type="radio" id="Bra" name="radioknappar" value="Bra"> <br>
-                            <Label for="Textruta">Har du några förbättrings områden skriv gärna</Label><br>
-                            <input type="text" id="text" name="förbättrings_områden"> <br><br>
+                            <input type="radio" id="Bra" name="radioknappar" value="Bra"> <br><br>
+                            <Label for="Textruta">Har du några förbättrings områden skriv gärna:</Label><br>
+                            <textarea name="textarea" id="Textruta" cols="50" rows="3"></textarea><br>
                             <input type="submit" value="Submit">
                         </section>
                     </form>

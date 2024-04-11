@@ -1,6 +1,6 @@
-document.addEventListener("DOMContentLoaded", init);
+/*document.addEventListener("DOMContentLoaded", init);
 
-function init(){/*
+{
     const form = document.getElementById('healthForm');
     const ageInput = document.getElementById('age');
     const pulseInput = document.getElementById('pulse');
@@ -11,7 +11,7 @@ function init(){/*
     
         if (ageInput.value.trim() === '' || parseInt(ageInput.value) < 1) {
             setErrorFor(ageInput, 'Snälla skriv en giltig ålder');
-            valid = false;
+            valid = false;function init()
         } else {
             setSuccessFor(ageInput);
         }
@@ -46,24 +46,28 @@ function init(){/*
         formControl.className = '';
     }*/
 
-    function calculateHeartRate(){
-        var age = document.getElementById("age").value;
-        var age = intensity = document.getElementById("intensity").value;
+    function calculateHeartRate()
+    {
+        var age = parseInt(document.getElementById('age').value);
+        var intensity = document.getElementById('intensity').value;
 
-        var maxHeartRate = 220-age
-        var targetHeartrate = 0
+        var maxHeartRate = 220-age;
 
-        if (intensity === "low"){
-        targetHeartrate = maxHeartRate * 0,5;
+        if (intensity === 'low')
+        {
+            document.getElementById('result').value = maxHeartRate*0.5;
         }
-        else if (intensity === "moderate"){
-            targetHeartrate = maxHeartRate *0.,7;
+        if (intensity === 'moderate')
+        {
+            document.getElementById('result').value = maxHeartRate*0.75;
         }
-        else if (intensity === "high"){
-            targetHeartrate = maxHeartRate *0.,85;
+        if (intensity === 'high')
+        {
+            document.getElementById('result').value = maxHeartRate*0.85;
         }
 
-        document.getElementById("result").innerHTML = "Din mål puls är: " + Math.round(targetHeartrate) + "bpm"
+        
         
     }
-}
+/*}*/
+
