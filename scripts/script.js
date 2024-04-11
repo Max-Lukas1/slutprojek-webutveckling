@@ -55,7 +55,7 @@
 
         if (intensity === 'low')
         {
-            document.getElementById('result').value = maxHeartRate*0.5;
+            document.getElementById('result').value = maxHeartRate*0.5
         }
         if (intensity === 'moderate')
         {

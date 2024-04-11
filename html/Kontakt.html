@@ -33,21 +33,21 @@
             <main>
                     <form id="healthForm" method="post" class="tvåspaltlayout" action="javascript:void(0)">
                         <section>
-                            <h3>Mål Puls</h3>
+                            <h2>Mål Puls</h2>
                             <label for="age">Ålder:</label><br>
-                            <input type="number" id="age" name="age" min="1" max="100" required><br><br>
+                            <input type="number" id="age" name="age" min="1" max="100"><br><br>
                             <label for="intensity">Tränings Intensitet</label><br>
-                            <select id="intensity" name="intensity" required><br>
+                            <select id="intensity" name="intensity" ><br>
                                 <option>Välj intensitet</option>
                                 <option value="low">Låg</option>
                                 <option value="moderate">Medel</option>
                                 <option value="high">Hög</option>
                             </select><br><br>
                             <input type="submit" value="Submit" onclick="calculateHeartRate();"> <br><br>
-                            <input type="text" id="result">
+                            <input type="text" id="result" value="Din mål puls är:">
                         </section>
                         <section>
-                            <p>Hur var sidan?</p>
+                            <h3>Hur var sidan?</h3>
                             <label for="Dåligt">Dålig</label>
                             <input type="radio" id="Dålig" name="radioknappar" value="Dålig"><br>
                             <label for="Okej">Okej</label>
