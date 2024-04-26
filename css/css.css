@@ -57,11 +57,6 @@ h1 a{
     
 }
 
-@font-face {
-    font-family: myFirstFont;
-    src: url(webbfont.woff);
-}
-
 section{
     color: white;
     background-color: #333;
@@ -79,7 +74,6 @@ ul{
 }
 
 ul li{
-    
     list-style-type: none;
     display: grid;
 }
@@ -95,7 +89,10 @@ ul li a {
 .tvåspaltlayout{
     grid-template-columns: 1fr 1fr;
     display: grid;
-    
+}
+
+form{
+    justify-items: center;
 }
 
 form section p{
@@ -107,8 +104,6 @@ p{
     padding: 10px;
     font-size: 17px;
 }
-
-
 
 .trespaltlayout{
  display: grid;
@@ -125,7 +120,7 @@ a:hover{
 }
 
 footer{
-   
+    grid-area: footer;
     display: block;
     background-color: #333;
     padding: 14px 100px;
@@ -140,28 +135,29 @@ img{
     display: block;
 }
 
+fieldset{
+    color: white;
+    background-color: #333;
+    border-style: none;
+    padding-bottom: 40px;
+}
+
+legend {
+    font-size: 3ex;
+}
 
 form{
     background-color: #333;
     margin: 0;
-    gap: 5px;
     padding-top: 10px;
 }
 
-
-
 input{
     margin: 0;
-    width: 80;
 }
 
-input[type="number"]{
-    width: 20%;
-}
-
-
-input[type="text"]{
-    width: 80%;
+input[type="number"], input[type="text"], select{
+    width: 15vw;
     
 }
 
@@ -169,8 +165,29 @@ textarea{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
 form section{
     height: 25vh;
+}
+
+
+table, th, td{
+    background-color: darkgreen;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-collapse: collapse;
+    padding: 20px;
+    
+}
+
+th, td{
+    width: 100px;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(webbfont.woff);
 }
 
 @media screen and (max-width: 1150px){
@@ -180,4 +197,7 @@ form section{
         display: block;
     }
 }
+
+
+
 

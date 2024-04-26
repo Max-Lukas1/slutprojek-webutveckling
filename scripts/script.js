@@ -11,23 +11,18 @@ function init()
 }
 window.onload = init;
 
-function getForm(form){
+function getForm(form) {
     const age = form.elements.age.value;
     const intensity = form.elements.intensity.value;
 
     let maxHeartRate = 220-age;
     let result;
 
-    if (intensity === 'low')
-    {
+    if (intensity === 'low') {
         result = maxHeartRate*0.5;
-    }
-    else if (intensity === 'moderate')
-    {
+    } else if (intensity === 'moderate') {
         result = maxHeartRate*0.75;
-    }
-    else if (intensity === 'high')
-    {
+    } else if (intensity === 'high') {
         result = maxHeartRate*0.85;
     }
 
