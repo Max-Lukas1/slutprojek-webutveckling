@@ -25,13 +25,14 @@ header {
     grid-area: main;
     display: grid;
     grid-template-rows:45px auto 70px 45px auto ;
-    gap:5px;
+    gap: 5px;
 }
 
 #kontakt main{
     grid-area: main;
     display: grid;
     grid-template-columns: auto;
+    gap: 5px;
 }
 
 h1{
@@ -60,7 +61,7 @@ h1 a{
 section{
     color: white;
     background-color: #333;
-    padding-left: 10px;
+    padding: 10px;
 }
 
 ul{
@@ -89,6 +90,7 @@ ul li a {
 .tvåspaltlayout{
     grid-template-columns: 1fr 1fr;
     display: grid;
+    gap: 10px;
 }
 
 form{
@@ -108,7 +110,7 @@ p{
 .trespaltlayout{
  display: grid;
  grid-template-columns: 1fr 1fr 1fr;
- gap:10px;
+ gap: 10px;
 }
 
 a:hover{
@@ -178,7 +180,10 @@ table, th, td{
     border-width: 1px;
     border-collapse: collapse;
     padding: 20px;
-    
+}
+
+tr :nth-child(){
+    background-color: lightgreen;
 }
 
 th, td{
