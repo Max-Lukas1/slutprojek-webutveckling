@@ -35,16 +35,16 @@
                         <fieldset>
                             <legend>Mål Puls</legend>
                             <label for="age">Ålder:</label><br>
-                            <input type="number" id="age" name="age" min="1" max="100"><br><br>
+                            <input type="number" id="age" name="age" min="1" max="100" required><br><br>
                             <label for="intensity">Tränings Intensitet</label><br>
-                            <select id="intensity" name="intensity" ><br>
+                            <select id="intensity" name="intensity" required><br>
                                 <option>Välj intensitet</option>
                                 <option value="low">Låg</option>
                                 <option value="moderate">Medel</option>
                                 <option value="high">Hög</option>
                             </select><br><br>
                             <input type="submit" value="Submit"> <br><br>
-                            <input type="text" id="result" name="result" value="Din mål puls är:">
+                            <input type="text" id="result" name="result" placeholder="din mål puls är:">
                         </fieldset>
                         <fieldset>
                             <legend>Hur var sidan?</legend>
@@ -57,6 +57,23 @@
                             <Label for="Textruta">Har du några förbättrings områden skriv gärna:</Label><br>
                             <textarea name="textarea" id="Textruta" cols="50" rows="3"></textarea><br>
                             <input type="submit" value="Submit">
+                        </fieldset>
+                        <fieldset>
+                            <legend>Inlogning</legend>
+                            <label for="anvandarnamn">Användarnamn:</label>
+                            <input type="text" id="anvandarnamn" name="anvandarnamn"><br>
+                            <label for="losenord">Lösenord:</label>
+                            <input type="password" name="losenord" id="losenord"><br>
+                            <label for="kon">Kön:</label>
+                            <select name="kon" id="kon">
+                                <optgroup label="Välj kön">
+                                    <option value="inget">Inget</option>
+                                    <option value="man">Man</option>
+                                    <option value="kvinna">Kvinna</option>
+                                    <option value="annat">Annat</option>
+                                </optgroup>
+                            </select><br><br>
+                            <button type="submit">Loga in</button>
                         </fieldset>
                     </form>
                 <div class="tvåspaltlayout">

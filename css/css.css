@@ -2,7 +2,7 @@ body{
  background-color: rgb(116, 105, 105);
  margin: 0;
  font-family: Arial, Helvetica, sans-serif;
- 
+ height: 97vh;
 }
 
 .wrapper{
@@ -148,11 +148,19 @@ legend {
     font-size: 3ex;
 }
 
+button, input[type="submit"]{
+    cursor: pointer;
+    font-size: 0.75rem;
+    width: 10ch;
+}
+
 form{
     background-color: #333;
     margin: 0;
     padding-top: 10px;
 }
+
+
 
 input{
     margin: 0;
@@ -160,21 +168,25 @@ input{
 
 input[type="number"], input[type="text"], select{
     width: 15vw;
-    
 }
 
 textarea{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+fieldset::first-letter{
+    font-size: 1.25em;
+}
 
 form section{
     height: 25vh;
 }
 
+tr{
+    background-color: darkgreen;
+}
 
 table, th, td{
-    background-color: darkgreen;
     border-style: solid;
     border-color: black;
     border-width: 1px;
@@ -182,7 +194,7 @@ table, th, td{
     padding: 20px;
 }
 
-tr :nth-child(){
+tr:nth-child(even){
     background-color: lightgreen;
 }
 
