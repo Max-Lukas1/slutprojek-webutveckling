@@ -5,134 +5,104 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Index</title>
         <link rel="stylesheet" href="../css/css.css">
-        <script src="../scripts/script.js"></script>
+        <script src="../scripts/script.js"></script> <!-- Laddar en extern JavaScript-fil -->
     </head>
-    <body id="kontakt">
+    <body id="kontakt"> <!-- Unikt id för kontaktsidan, kan användas för specifik styling -->
         <div class="wrapper">
             <header>
-            <h1>
-                <a href="../html/index.html">&#8962 Kontakt</a>
-            </h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="../html/Push.html">Push</a>
-                    </li>
-                    <li>
-                        <a href="../html/Pull.html">Pull</a>
-                    </li>
-                    <li>
-                        <a href="../html/Legs.html">Legs</a>
-                    </li>
-                    <li>
-                        <a href="../html/Kontakt.html">Kontakt</a>
-                    </li>
-                </ul>
-            </nav>
+                <h1>
+                    <a href="../html/index.html">&#8962 Kontakt</a> <!-- Länk till startsidan med husikon och text "Kontakt" -->
+                </h1>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="../html/Push.html">Push</a>
+                        </li>
+                        <li>
+                            <a href="../html/Pull.html">Pull</a>
+                        </li>
+                        <li>
+                            <a href="../html/Legs.html">Legs</a>
+                        </li>
+                        <li>
+                            <a href="../html/Kontakt.html">Kontakt</a>
+                        </li>
+                    </ul>
+                </nav>
             </header>
             <main>
-                    <form id="healthForm" method="post" class="tvåspaltlayout" action="javascript:void(0)">
-                        <fieldset>
-                            <legend>Mål Puls</legend>
-                            <label for="age">Ålder:</label><br>
-                            <input type="number" id="age" name="age" min="1" max="100" required><br><br>
-                            <label for="intensity">Tränings Intensitet</label><br>
-                            <select id="intensity" name="intensity" required><br>
-                                <option>Välj intensitet</option>
-                                <option value="low">Låg</option>
-                                <option value="moderate">Medel</option>
-                                <option value="high">Hög</option>
-                            </select><br><br>
-                            <input type="submit" value="Submit"> <br><br>
-                            <input type="text" id="result" name="result" placeholder="din mål puls är:">
-                        </fieldset>
-                        <fieldset>
-                            <legend>Hur var sidan?</legend>
-                            <label for="Dåligt">Dålig</label>
-                            <input type="radio" id="Dålig" name="radioknappar" value="Dålig"><br>
-                            <label for="Okej">Okej</label>
-                            <input type="radio" id="Okej" name="radioknappar" value="Okej"> <br>
-                            <label for="Bra">Bra</label>
-                            <input type="radio" id="Bra" name="radioknappar" value="Bra"> <br><br>
-                            <Label for="Textruta">Har du några förbättrings områden skriv gärna:</Label><br>
-                            <textarea name="textarea" id="Textruta" cols="50" rows="3"></textarea><br>
-                            <input type="submit" value="Submit">
-                        </fieldset>
-                        <fieldset>
-                            <legend>Inlogning</legend>
-                            <label for="anvandarnamn">Användarnamn:</label>
-                            <input type="text" id="anvandarnamn" name="anvandarnamn"><br>
-                            <label for="losenord">Lösenord:</label>
-                            <input type="password" name="losenord" id="losenord"><br>
-                            <label for="kon">Kön:</label>
-                            <select name="kon" id="kon">
-                                <optgroup label="Välj kön">
-                                    <option value="inget">Inget</option>
-                                    <option value="man">Man</option>
-                                    <option value="kvinna">Kvinna</option>
-                                    <option value="annat">Annat</option>
-                                </optgroup>
-                            </select><br><br>
-                            <button type="submit">Loga in</button>
-                        </fieldset>
-                    </form>
+                <form id="healthForm" method="post" class="tvåspaltlayout" action="javascript:void(0)"> <!-- Formulär med två kolumnlayout -->
+                    <fieldset>
+                        <legend>Mål Puls</legend> <!-- Grupp av relaterade formulärfält -->
+                        <label for="age">Ålder:</label><br>
+                        <input type="number" id="age" name="age" min="1" max="100" required><br><br> <!-- Fält för ålder -->
+                        <label for="intensity">Tränings Intensitet</label><br>
+                        <select id="intensity" name="intensity" required><br>
+                            <option>Välj intensitet</option> <!-- Val för träningsintensitet -->
+                            <option value="low">Låg</option>
+                            <option value="moderate">Medel</option>
+                            <option value="high">Hög</option>
+                        </select><br><br>
+                        <input type="submit" value="Submit"> <br><br> <!-- Submit-knapp -->
+                        <input type="text" id="result" name="result" placeholder="din mål puls är:"> <!-- Fält för att visa resultat -->
+                    </fieldset>
+                    <fieldset>
+                        <legend>Hur var sidan?</legend> <!-- Grupp av relaterade formulärfält -->
+                        <label for="Dåligt">Dålig</label>
+                        <input type="radio" id="Dålig" name="radioknappar" value="Dålig"><br> <!-- Radio-knappar för feedback -->
+                        <label for="Okej">Okej</label>
+                        <input type="radio" id="Okej" name="radioknappar" value="Okej"> <br>
+                        <label for="Bra">Bra</label>
+                        <input type="radio" id="Bra" name="radioknappar" value="Bra"> <br><br>
+                        <label for="Textruta">Har du några förbättrings områden skriv gärna:</label><br> <!-- Textarea för förbättringsförslag -->
+                        <textarea name="textarea" id="Textruta" cols="50" rows="3"></textarea><br>
+                        <input type="submit" value="Submit"> <!-- Submit-knapp -->
+                    </fieldset>
+                    <fieldset>
+                        <legend>Inlogning</legend> <!-- Grupp av relaterade formulärfält -->
+                        <label for="anvandarnamn">Användarnamn:</label>
+                        <input type="text" id="anvandarnamn" name="anvandarnamn"><br> <!-- Fält för användarnamn -->
+                        <label for="losenord">Lösenord:</label>
+                        <input type="password" name="losenord" id="losenord"><br> <!-- Fält för lösenord -->
+                        <label for="kon">Kön:</label>
+                        <select name="kon" id="kon"> <!-- Dropdown men för att välja kön -->
+                            <optgroup label="Välj kön">
+                                <option value="inget">Inget</option>
+                                <option value="man">Man</option>
+                                <option value="kvinna">Kvinna</option>
+                                <option value="annat">Annat</option>
+                            </optgroup>
+                        </select><br><br>
+                        <button type="submit">Loga in</button> <!-- Inloggningsknapp -->
+                    </fieldset>
+                </form>
                 <div class="tvåspaltlayout">
                     <section>
-                        <table>
-                            <tr>
-                                <th>
-                                    1
-                                </th>
-                                <td>
-                                    hej
-                                </td>
-                                <td>
-                                    lwdwfiejfefjisfjsejfe
-                                </td>
+                        <table> <!-- Tabell för att visa information -->
+                            <tr> <!--Ny rad i tabell-->
+                                <th>1</th> <!--Rubrik för den radden-->
+                                <td>hej</td> <!--Vanlig text rad i radden-->
+                                <td>lwdwfiejfefjisfjsejfe</td>
                             </tr>
                             <tr>
-                                <th>
-                                    3
-                                </th>
-                                <td>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                </td>
-                                <td>
-                                    Lorem ipsum dolor sit amet consectetur, 
-                                </td>
+                                <th>3</th>
+                                <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                <td>Lorem ipsum dolor sit amet consectetur, </td>
                             </tr>
                             <tr>
-                                <th>
-                                    4
-                                </th>
-                                <td>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                </td>
-                                <td>
-                                    Lorem ipsum dolor sit amet consectetur, 
-                                </td>
+                                <th>4</th>
+                                <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                <td>Lorem ipsum dolor sit amet consectetur, </td>
                             </tr>
                             <tr>
-                                <th>
-                                    5
-                                </th>
-                                <td>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                </td>
-                                <td>
-                                    Lorem ipsum dolor sit amet consectetur, 
-                                </td>
+                                <th>5</th>
+                                <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                <td>Lorem ipsum dolor sit amet consectetur, </td>
                             </tr>
                             <tr>
-                                <th>
-                                    6
-                                </th>
-                                <td>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                </td>
-                                <td>
-                                    Lorem ipsum dolor sit amet consectetur, 
-                                </td>
+                                <th>6</th>
+                                <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                <td>Lorem ipsum dolor sit amet consectetur, </td>
                             </tr>
                         </table>
                     </section>
@@ -144,7 +114,6 @@
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae animi, maiores architecto cumque numquam quae quidem dolor illum perferendis ea, velit eum vel exercitationem expedita provident, maxime ad voluptatem consequatur! 
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae animi, maiores architecto cumque numquam quae quidem dolor illum perferendis ea, velit eum vel exercitationem expedita provident, maxime ad voluptatem consequatur!
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae animi, maiores architecto cumque numquam quae quidem dolor illum perferendis ea, velit eum vel exercitationem expedita provident, maxime ad voluptatem consequatur!
-                            
                         </p>
                     </section>
                 </div>
