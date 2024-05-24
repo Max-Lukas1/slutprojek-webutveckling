@@ -3,6 +3,7 @@ body{
  margin: 0;
  font-family: Arial, Helvetica, sans-serif;
  height: 97vh;
+ color: white;
 }
 
 .wrapper{
@@ -56,7 +57,6 @@ h1{
 
 h2, h3{
     background-color: #333;
-    color: white;
     padding-top: 5px;
     text-align: center;
     margin: 0;
@@ -67,13 +67,11 @@ h1 a{
     display: grid;
     height: 40px;
     text-decoration: none;
-    color: white;
     text-align: center;
     
 }
 
 section{
-    color: white;
     background-color: #333;
     padding: 10px;
 }
@@ -94,7 +92,6 @@ ul li{
 }
 
 ul li a {
-    color: white;
     padding: 14px 100px;
     text-decoration: none;
     font-family: myFirstFont;
@@ -140,7 +137,6 @@ footer{
     display: block;
     background-color: #333;
     padding: 14px 100px;
-    color: white;
     text-align: center;
     margin-bottom: 0;
 }
@@ -152,7 +148,6 @@ img{
 }
 
 fieldset{
-    color: white;
     background-color: #333;
     border-style: none;
     padding-bottom: 40px;
@@ -173,8 +168,6 @@ form{
     margin: 0;
     padding-top: 10px;
 }
-
-
 
 input{
     margin: 0;
@@ -216,19 +209,12 @@ th, td{
     width: 100px;
 }
 
-@font-face {
-    font-family: myFirstFont;
-    src: url(webbfont.woff);
+a:link, /* LoVE Focus Hate */
+a:visited,
+a:hover,
+a:focus,
+a:active {
+	color: inherit;
 }
-
-@media screen and (max-width: 1150px){
-    img{
-        width: 225px;
-        height: 275px;
-        display: block;
-    }
-}
-
-
 
 
