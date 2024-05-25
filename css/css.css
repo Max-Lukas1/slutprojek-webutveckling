@@ -1,42 +1,36 @@
 body{
- background-color: rgb(116, 105, 105);
- margin: 0;
- font-family: Arial, Helvetica, sans-serif;
- height: 97vh;
- color: white;
+ background-color: rgb(116, 105, 105); /*Backgrunds färgen är grå på hela sidan*/
+ margin: 0; /*Det är ingen tillägd margin på bodyn*/
+ font-family: Arial, Helvetica, sans-serif; /*Fontfamiljn är arial på hela sidan om det inte är några undantag*/
+ height: 97vh; /*Gör att Man altid ser 97vh detta påverkar inte sidan nu men kan vara bra i utvecklings syfte*/
+ color: white; /*Texten på sidan är vit*/
 }
 
 .wrapper{
-    display: grid;
-    grid-template-rows: 140px 1fr 50px;
-    gap:10px;
-    grid-template-areas: 
+    display: grid; /*Wrapper displayar en grid*/
+    grid-template-rows: 140px 1fr 50px; /*Orginall layouten använts i det sidor med en lokalmeny för första delen måste ha extra pixlar i höjd*/
+    gap:10px; /*gör att det är ett utrymme mellan navigationen mainen och fottern*/
+    grid-template-areas: /*Markerar vilka olika ytor på sidan som finns och detta gör det möjligt att använda grid-template-rows på ett bra sätt*/
         "header"
         "main"
         "footer";
 }
 
 #legs .wrapper, #kontakt .wrapper, #index .wrapper{
-    display: grid;
-    grid-template-rows: 90px 1fr 50px;
-    gap:10px;
-    grid-template-areas: 
-        "header"
-        "main"
-        "footer";
+    grid-template-rows: 90px 1fr 50px; /*Layouten för sidrorna där första delen är kortare för den bara har globalmenyn*/
 }
 
-header{
-    grid-area: header;
-    display: grid;
-    grid-template-rows: 50px 50px;
+header{ 
+    grid-area: header;/*Displayar grid-area header så wrapperns grid-template-areas vet vilken yta det är*/
+    display: grid; /*Displayar att det är en grid*/
+    grid-template-rows: 50px 50px; /*Gör två lika stora rader för hemknappen och globalmenyn*/
 }
 
 #legs main{
-    grid-area: main;
-    display: grid;
-    grid-template-rows:45px auto 70px 45px auto ;
-    gap: 5px;
+    grid-area: main; /*Displayar grid-area Main så wrapperns grid-template-areas vet vilken yta det är*/
+    display: grid; /*Displayar att det ör en grid*/
+    grid-template-rows:45px auto 70px 45px auto ; /*Bestämmer olika ytor som är speciellt för legs då 45px är h2, auto är övningarna, 70 px är en liten snutt som inte är tresplat, 45px är h3 och auto är sista texten på sidan*/
+    gap: 5px; /*Gör att alla olika ytorna hat ett mellanrum*/
 }
 
 #kontakt main{
@@ -47,119 +41,114 @@ header{
 }
 
 #index main > section > p{
-    font-size: 3ex;
+    font-size: 3ex; /*font-zisen efter en section med ett p i son ligger på index sidan är 3ex*/
 }
 
 h1{
-    background-color: #333;
-    margin: 0;
+    background-color: #333; /*Bakgrunds färgen bakom h1 är en viss färg*/
+    margin: 0; /*Margins på h1 är 0*/
 }
 
 h2, h3{
-    background-color: #333;
-    padding-top: 5px;
-    text-align: center;
-    margin: 0;
-    padding-top: 10px;
+    background-color: #333; 
+    text-align: center; /*Texten är centrerad*/
+    margin: 0; 
+    padding-top: 10px; /*Utrymmet i blokelementet lyfts up 5 px från h2 och h3*/
 }
 
 h1 a{
     display: grid;
-    height: 40px;
-    text-decoration: none;
+    height: 40px; /*Höjden på a och h1 är 40px*/
+    text-decoration: none; /*tar bort all text-decoration*/
     text-align: center;
     
 }
 
 section{
     background-color: #333;
-    padding: 10px;
+    padding: 10px; /*har 10 px åt alla håll i blockelemntet*/
 }
 
 ul{
-    padding: 0;
+    padding: 0; /*Det är inget extra utrymme i blockelemntet*/
     background-color: #333;
     text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 0;
+    display: flex; /*Man gör att ul är ett felx block*/
+    flex-direction: row; /*Bestämmer var den ska ligga i flex-blocket */
+    justify-content: center; /*Gör att globalmenyn är centrerad*/
+    margin: 0; 
 }
 
 ul li{
-    list-style-type: none;
-    display: grid;
+    list-style-type: none; /*Har ingen extra still typ*/
+    display: grid; 
 }
 
 ul li a {
-    padding: 14px 100px;
-    text-decoration: none;
-    font-family: myFirstFont;
+    padding: 14px 100px; /*Första paddingen gäller ytan över och under i bloket medans andra är bredden*/
+    text-decoration: none; /*ingen text dekoration*/
+    font-family: myFirstFont; /*Eget nedladdat typsnitt*/
     
 }
 
-.tvåspaltlayout{
-    grid-template-columns: 1fr 1fr;
+.tvåspaltlayout{/*Gör så jag kan få två spaltslayout*/
+    grid-template-columns: 1fr 1fr; /*Gör så det blir två spalter*/
     display: grid;
-    gap: 10px;
+    gap: 10px; /*Gör så det är mellanrum mellan splaterna*/
 }
 
 form{
-    justify-items: center;
+    justify-items: center; /*Gör att allt form innehåll flytas centrarat i fieldsetet*/
 }
 
 form section p{
-    padding: 0;
+    padding: 0; /*Det är ingen padding*/
 }
 
 p{
     margin:0;
     padding: 10px;
-    font-size: 17px;
+    font-size: 17px; 
 }
 
-.trespaltlayout{
- display: grid;
- grid-template-columns: 1fr 1fr 1fr;
+.trespaltlayout{/*Gör så jag kan få tre spaltslayout*/
+ display: grid;  
+ grid-template-columns: 1fr 1fr 1fr; /*Gör så det är 3 olika rader*/
  gap: 10px;
 }
 
 a:hover{
-    background-color: #555;
-}
-
-.active a{
-    background-color: 4CAF50;
+    background-color: #555; /*När man håller över en länk blir bavkgrunden en ljusare färg*/
 }
 
 footer{
-    grid-area: footer;
+    grid-area: footer; /*Displatar grid-area fopter*/
     display: block;
     background-color: #333;
     padding: 14px 100px;
     text-align: center;
-    margin-bottom: 0;
+    margin-bottom: 0; /*Gör att det inte är någon padding i botten*/
 }
 
 img{
     /*Visar bilder som block så att bilder som inte är riktiga bilder ska ha en bredd och höjd*/
-    width: 250px;
-    height: 300px;
+    width: 250px; /*Bredden på img*/
+    height: 300px; /*Höjden på img*/
     display: block;
 }
 
 fieldset{
     background-color: #333;
-    border-style: none;
+    border-style: none; /*gör att fieldset inte har en border*/
     padding-bottom: 40px;
 }
 
 legend {
-    font-size: 3ex;
+    font-size: 3ex; /*storleken på legen är höjden av 3 lilla x*/
 }
 
-button, input[type="submit"]{
-    cursor: pointer;
+button, input[type="submit"]{ 
+    cursor: pointer; /*När man håller med mussen över button eller submit så blir cursor anorlunda*/
     font-size: 0.75rem;
     width: 10ch;
 }
@@ -175,17 +164,17 @@ input{
 }
 
 input[type="number"], input[type="text"], select{
-    width: 15vw;
+    width: 15vw; /*Bredden på text, nummer och select formulär är bredden 15vw*/
 }
 
 textarea{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; /*Bestämmer fontfamilj på textarea*/
     width: 400px;
     height: 100px;
 }
 
 fieldset::first-letter{
-    font-size: 1.25em;
+    font-size: 1.25em; /*Första bokstaven efter fieldest elementet är större*/
 }
 
 form {
@@ -193,23 +182,28 @@ form {
 }
 
 tr{
-    background-color: darkgreen;
+    background-color: darkgreen; /*Raderna är mörkgröna i en lista*/
 }
 
 table, th, td{
-    border-style: solid;
-    border-color: black;
-    border-width: 1px;
-    border-collapse: collapse;
-    padding: 20px;
+    border-style: solid; /*Gör att det finns en border*/
+    border-color: black; /*Gör att färgen är svart på bordern*/
+    border-width: 1px; /*Bredden på bordern är 1px*/
+    border-collapse: collapse; /*Gör att det inte är något mellanrum mellan rutorna*/
+    padding: 20px; 
 }
 
 tr:nth-child(even){
-    background-color: rgb(52, 161, 52);
+    background-color: rgb(52, 161, 52); /*Gör att jämna rader är ljuare gröna som skapar zebra-striping*/
 }
 
 th, td{
-    width: 100px;
+    width: 100px; 
+}
+
+video{
+    width: 300px;
+    height: 240px;
 }
 
 a:link, /* LoVE Focus Hate */

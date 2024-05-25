@@ -31,7 +31,7 @@
                 </nav>
             </header>
             <main>
-                <form id="healthForm" method="post" class="tvåspaltlayout" action="javascript:void(0)"> <!-- Formulär med två kolumnlayout -->
+                <form id="healthForm" method="post" class="tvåspaltlayout" action="javascript:void(0)"> <!-- Formulär med två -->
                     <fieldset>
                         <legend>Mål Puls</legend> <!-- Grupp av relaterade formulärfält -->
                         <label for="age">Ålder:</label><br>
@@ -43,8 +43,8 @@
                             <option value="moderate">Medel</option>
                             <option value="high">Hög</option>
                         </select><br><br>
-                        <input type="submit" value="Submit"> <br><br> <!-- Submit-knapp -->
-                        <input type="text" id="result" name="result" placeholder="din mål puls är:"> <!-- Fält för att visa resultat -->
+                        <input type="submit" value="Submit"> <br><br> <!-- Submit-knapp för att skicka in sina svar, Har olika submit knappar för olika feiildset för det är olika områden -->
+                        <input type="text" id="result" name="result" placeholder="din mål puls är:"> <!-- Fält för att visa resultatet från java script -->
                     </fieldset>
                     <fieldset>
                         <legend>Hur var sidan?</legend> <!-- Grupp av relaterade formulärfält -->
@@ -54,9 +54,9 @@
                         <input type="radio" id="Okej" name="radioknappar" value="Okej"> <br>
                         <label for="Bra">Bra</label>
                         <input type="radio" id="Bra" name="radioknappar" value="Bra"> <br><br>
-                        <label for="Textruta">Har du några förbättrings områden skriv gärna:</label><br> <!-- Textarea för förbättringsförslag -->
-                        <textarea name="textarea" id="Textruta"></textarea><br>
-                        <input type="submit" value="Submit"> <!-- Submit-knapp -->
+                        <label for="Textruta">Har du några förbättrings områden skriv gärna:</label><br> 
+                        <textarea name="textarea" id="Textruta"></textarea><br><!-- Textarea för förbättringsförslag -->
+                        <input type="submit" value="Submit"> <!-- Submit-knapp för att skicka in sina svar -->
                     </fieldset>
                     <fieldset>
                         <legend>Inlogning</legend> <!-- Grupp av relaterade formulärfält -->
